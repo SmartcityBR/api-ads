@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { Request, Response } from "express";
 import AnnouncementController from "./app/controllers/AnnouncementController";
 import AdvertiserController from "./app/controllers/AdvertiserController";
 
@@ -16,5 +17,7 @@ routes.get('/advertisers', advertiserController.get);
 routes.post('/advertisers', advertiserController.store);
 routes.put('/advertisers/:id', advertiserController.update);
 routes.delete('/advertisers/:id', advertiserController.delete);
+
+routes.get('/', (req: Request, res: Response) => res.send("Hello World!"));
 
 export default routes;
