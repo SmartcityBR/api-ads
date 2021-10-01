@@ -1,0 +1,29 @@
+{
+   "name": "api-ads-smartcitybr",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "dev": "npx nodemon --exec ts-node src/server.ts",
+      "typeorm": "npx ts-node ./node_modules/typeorm/cli.js",
+      "start": "ts-node src/index.ts"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "nodemon": "^2.0.13",
+      "reflect-metadata": "^0.1.13",
+      "ts-node": "3.3.0",
+      "typeorm": "^0.2.37",
+      "typescript": "3.3.3333",
+      "@types/node": "^8.0.29"
+   },
+   "dependencies": {
+      "@types/express": "^4.17.13",
+      "express": "^4.17.1",
+      "mysql": "^2.18.1",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.2.37"
+   }
+}
